@@ -18,6 +18,10 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          - id: 24.06
+            arch: aarch64_generic
+            sdk_url_path: https://downloads.openwrt.org/releases/24.06.0/targets/armsr/armv8
+            sdk_name: -sdk-24.06.0-armsr-armv8_
           - id: 23.05
             arch: x86_64
             sdk_url_path: https://downloads.openwrt.org/releases/23.05.5/targets/x86/64
